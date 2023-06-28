@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="container">
+        <h1> Relatório de Aulas</h1>
+        <br><br>
+        <h2>Filtros</h2>
+        <div class="inputs">
+            <div>
+                <p>Selecione a data</p>
+                <input type="date" id="input">
+            </div>
+            <div>
+                <p>Selecione a escola</p>
+                <select id="input">
+                    <option value="Fatec">Fatec</option> 
+                </select>
+            </div>
+            <div>
+                <p>Selecione a turma</p>
+                <select id="input">
+                    <option value="Turma AMS - 2023">Turma AMS - 2023</option> 
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="middleDiv">
+            <div class="typeSelect">
+                <br><br><br><p id="titleType">Selecione o tipo:</p>
+                <label>
+                    <input type="checkbox" name="key" value="value" />
+                    <span id="textBox">Todos</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="key" value="value" />
+                    <span id="textBox">Arrastar e Soltar</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="key" value="value" />
+                    <span id="textBox">Multiplas Escolhas</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="key" value="value" />
+                    <span id="textBox">Envio de Arquivos</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="key" value="value" />
+                    <span id="textBox">Enquetes</span>
+                </label>
+            </div>
+            
+            <div class="tipoAula">
+                <h2>Aulas - Tipo</h2>
+                <p>Aulas separadas por tipo</p>
+                <div id="grafico">
+                    GRÁFICO
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="lowerDiv">
+            <h2>Aulas - Dono</h2>
+            <p>Aulas separadas pelo dono</p>
+            <input type="text" id="inputText" placeholder="Buscar Usuário" />
+            <div class="user">
+                <i class='bx bx-user-pin'></i> <p class="nameuser">Lucas Wesley</p> <p class="numberuser">(29568395)</p>
+            </div>
+            <div class="user">
+                <i class='bx bx-user-pin'></i> <p class="nameuser">Lucas Wesley</p> <p class="numberuser">(29568395)</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
